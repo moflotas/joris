@@ -6,5 +6,5 @@ Is has basic tinder-like interface and in future will show random joke each time
 
 Screenshots:
 
-![Card](./images/S1.png "Card")
-![Card swipe](./images/S2.png "Card swipe")
+![Card](./images/S1.jpg "Card")
+![Card swipe](./images/S2.jpg "Card swipe")
