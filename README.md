@@ -2,7 +2,7 @@
 
 This is beginner project for CPMDwF S22 course
 
-Is has basic tinder-like interface and in future will show random joke each time the card swiped
+Shows 1 random joke at a time, which you can add to favourites or discard as a bad one.
 
 ## APK:
 
