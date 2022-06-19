@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090403958808",
+    "project_id": "joris-90061",
+    "storage_bucket": "joris-90061.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090403958808:android:2a044c839da877021f036d",
+        "android_client_info": {
+          "package_name": "com.example.joris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090403958808-tjoroojnlhlbeco7famf4ajt7im0ag33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOR5H6Erkc72yMEJ68XfG6F8FsbxnQ5wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090403958808-tjoroojnlhlbeco7famf4ajt7im0ag33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
