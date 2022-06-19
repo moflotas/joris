@@ -10,5 +10,6 @@ Shows 1 random joke at a time, which you can add to favourites or discard as a b
 
 ## Screenshots:
 
-![Card](./images/S1.jpg "Card")
-![Card swipe](./images/S2.jpg "Card swipe")
+Sample card                   | Sample joke          
+:----------------------------:|:---------------------------------:
+![](/images/sample_card.png)  | ![](/images/sample_jokes.png)  
