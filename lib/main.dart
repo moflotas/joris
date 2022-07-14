@@ -5,10 +5,12 @@ import 'package:joris/routes.dart';
 import 'package:joris/screens/big_joke_screen.dart';
 import 'package:joris/screens/home.dart';
 import 'firebase_options.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
   runApp(const JorisApp());
 }
 

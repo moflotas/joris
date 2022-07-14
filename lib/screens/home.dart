@@ -58,8 +58,16 @@ class Home extends StatelessWidget {
         controller: controller,
         onPageChanged: _onScreenChanged,
         children: <Widget>[
-          const Center(
-            child: Text('Search Page'),
+          Center(
+            child: TextButton(
+              onPressed: () => throw Exception("Some random exception"),
+              style: TextButton.styleFrom(
+                primary: Colors.white,
+                backgroundColor: Get.theme.backgroundColor,
+                onSurface: Colors.grey,
+              ),
+              child: const Text("Crashlytics test"),
+            ),
           ),
           SafeArea(
             child: Center(
