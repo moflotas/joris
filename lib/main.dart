@@ -1,15 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:joris/screens/favourites_screen.dart';
-import 'package:joris/screens/jokes_screen.dart';
-
+import 'package:get/get.dart';
+import 'package:joris/routes.dart';
+import 'package:joris/screens/big_joke_screen.dart';
+import 'package:joris/screens/home.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const JorisApp());
 }
 
@@ -18,11 +17,19 @@ class JorisApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: <String, WidgetBuilder>{
-        '/': (BuildContext context) => const JokesScreen(),
-        '/favourites': (BuildContext context) => const FavouritesScreen(),
-      },
+    Get.changeTheme(
+      ThemeData(
+        backgroundColor: Colors.amber[800],
+        primaryColor: Colors.white,
+      ),
+    );
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: Routes.main,
+      getPages: [
+        GetPage(name: Routes.main, page: () => Home()),
+        GetPage(name: Routes.cardBigPage, page: () => const JokesBigScreen()),
+      ],
     );
   }
 }

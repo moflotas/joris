@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1090403958808",
+    "firebase_url": "https://joris-90061-default-rtdb.firebaseio.com",
     "project_id": "joris-90061",
     "storage_bucket": "joris-90061.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "1090403958808-tjoroojnlhlbeco7famf4ajt7im0ag33.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1090403958808-18c29snl9segm1re17cpqmueo192n5vs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.joris"
+              }
             }
           ]
         }
